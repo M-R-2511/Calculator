@@ -15,7 +15,7 @@ body {
 }
 input {
   padding: 20px 5px;
-  font-size: 30px;
+  font-size: 40px;
   width: 80%;
   border: none;
   border-bottom: 2px solid #fff;
@@ -47,9 +47,30 @@ td:hover {
 .del {
   color: crimson;
 }
+.del:hover {
+  background-color: crimson;
+  color: #fff;
+}
 .ac {
   color: rgb(17, 156, 63);
 }
+.ac:hover {
+  background-color: rgb(17, 156, 63);
+  color: #fff;
+}
 .eq {
-  font-size: 70px;
+  color: #006898;
+}
+.eq:hover {
+  background-color: #006898;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  input {
+    font-size: 30px;
+  }
+  td {
+    font-size: 45px;
+  }
 }

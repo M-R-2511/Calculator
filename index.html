@@ -18,7 +18,7 @@
   <body>
     <div class="container">
       <div>
-        <input class="input" type="text" />
+        <input class="input" type="text" autocomplete="false" />
       </div>
       <div class="calculator">
         <table class="table">
@@ -49,9 +49,7 @@
           <tr>
             <td onclick="element(this)">.</td>
             <td onclick="element(this)">0</td>
-            <td class="eq" style="background-color: #006898" onclick="solve()">
-              =
-            </td>
+            <td class="eq" onclick="solve()">=</td>
             <td onclick="element(this)">%</td>
           </tr>
         </table>

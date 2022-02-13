@@ -39,7 +39,7 @@ td {
   -o-transition: 0.3s;
 }
 td:hover {
-  background-color: #444;
+  background-color: #333;
 }
 .x:hover {
   background-color: crimson;

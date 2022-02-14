@@ -9,7 +9,7 @@ body {
 }
 ::-webkit-scrollbar {
   /* background-color: #006898; */
-  width: 20px;
+  width: 15px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0px 0px 5px gray;

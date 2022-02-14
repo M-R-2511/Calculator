@@ -7,6 +7,29 @@
 body {
   background-color: #02101b;
 }
+::-webkit-scrollbar {
+  /* background-color: #006898; */
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0px 0px 5px gray;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #006898;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #009868;
+}
 .container {
   text-align: center;
   width: 80%;

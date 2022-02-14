@@ -6,7 +6,6 @@
 }
 body {
   background-color: #02101b;
-  overflow: hidden;
 }
 .container {
   text-align: center;
@@ -14,6 +13,7 @@ body {
   margin: 40px auto;
 }
 input {
+  letter-spacing: 7px;
   padding: 20px 5px;
   font-size: 40px;
   width: 80%;
@@ -22,14 +22,23 @@ input {
   outline: none;
   background-color: transparent;
 }
+#result {
+  padding: 5px 5px;
+  border-bottom: none;
+  color: gray;
+  font-size: 18px;
+}
 input:focus {
   outline: none;
 }
 .calculator {
   margin-top: 50px;
 }
+table {
+  max-height: 70vh;
+}
 td {
-  height: 10px;
+  min-height: 10px;
   font-size: 60px;
   cursor: pointer;
   transition: 0.3s;
@@ -67,10 +76,28 @@ td:hover {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
   input {
     font-size: 30px;
   }
   td {
     font-size: 45px;
+  }
+  td:hover,
+  .del:hover,
+  .ac:hover,
+  .eq:hover {
+    background-color: var(--bs-table-bg);
+  }
+  .eq:hover {
+    color: #006898;
+  }
+  .ac:hover {
+    color: rgb(17, 156, 63);
+  }
+  .del:hover {
+    color: crimson;
   }
 }

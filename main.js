@@ -24,10 +24,8 @@ function del() {
   let x = input.value[length - 1];
   if (x === " ") {
     input.value = input.value.slice(0, -2);
-    result.value = result.value.slice(0, -2);
   } else {
     input.value = input.value.slice(0, -1);
-    result.value = result.value.slice(0, -1);
   }
 }
 

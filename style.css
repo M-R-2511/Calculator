@@ -8,7 +8,6 @@ body {
   background-color: #02101b;
 }
 ::-webkit-scrollbar {
-  /* background-color: #006898; */
   width: 15px;
 }
 ::-webkit-scrollbar-track {
@@ -39,7 +38,7 @@ input {
   letter-spacing: 5px;
   padding: 20px 5px;
   font-size: 40px;
-  width: 80%;
+  width: 70%;
   border: none;
   border-bottom: 2px solid #fff;
   outline: none;
@@ -71,7 +70,7 @@ td {
   -o-transition: 0.3s;
 }
 td:hover {
-  background-color: #333;
+  background-color: #444;
 }
 .x:hover {
   background-color: crimson;
@@ -107,20 +106,5 @@ td:hover {
   }
   td {
     font-size: 45px;
-  }
-  td:hover,
-  .del:hover,
-  .ac:hover,
-  .eq:hover {
-    background-color: var(--bs-table-bg);
-  }
-  .eq:hover {
-    color: #006898;
-  }
-  .ac:hover {
-    color: rgb(17, 156, 63);
-  }
-  .del:hover {
-    color: crimson;
   }
 }

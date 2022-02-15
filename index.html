@@ -23,35 +23,42 @@
       </div>
       <div class="calculator">
         <table class="table table-dark">
-          <tr>
-            <td class="ac" onclick="clr()">AC</td>
-            <td class="del" onclick="del()">del</td>
-            <td onclick="element(this)" title="power">**</td>
-            <td onclick="element(this)">÷</td>
+          <tr class="row">
+            <td class="col-3" id="ac" onclick="clr()">C</td>
+            <td class="col-3" id="del" onclick="del()">del</td>
+            <td id="power" class="col-3" onclick="element(this)">pow</td>
+            <td id="division" class="col-3" onclick="element(this)">÷</td>
           </tr>
-          <tr>
-            <td onclick="element(this)">7</td>
-            <td onclick="element(this)">8</td>
-            <td onclick="element(this)">9</td>
-            <td onclick="element(this)">x</td>
+          <tr class="row">
+            <td class="col-3" onclick="element(this)">7</td>
+            <td class="col-3" onclick="element(this)">8</td>
+            <td class="col-3" onclick="element(this)">9</td>
+            <td id="multiple" class="col-3" onclick="element(this)">x</td>
           </tr>
-          <tr>
-            <td onclick="element(this)">4</td>
-            <td onclick="element(this)">5</td>
-            <td onclick="element(this)">6</td>
-            <td onclick="element(this)">-</td>
+          <tr class="row">
+            <td class="col-3" onclick="element(this)">4</td>
+            <td class="col-3" onclick="element(this)">5</td>
+            <td class="col-3" onclick="element(this)">6</td>
+            <td id="substract" class="col-3" onclick="element(this)">-</td>
           </tr>
-          <tr>
-            <td onclick="element(this)">1</td>
-            <td onclick="element(this)">2</td>
-            <td onclick="element(this)">3</td>
-            <td onclick="element(this)">+</td>
+          <tr class="row">
+            <td class="col-3" onclick="element(this)">1</td>
+            <td class="col-3" onclick="element(this)">2</td>
+            <td class="col-3" onclick="element(this)">3</td>
+            <td id="summtion" class="col-3" onclick="element(this)">+</td>
           </tr>
-          <tr>
-            <td onclick="element(this)">.</td>
-            <td onclick="element(this)">0</td>
-            <td onclick="element(this)">%</td>
-            <td class="eq" ondblclick="backResult()" onclick="solve()">=</td>
+          <tr class="row">
+            <td class="col-3" onclick="element(this)">0</td>
+            <td class="col-3" onclick="element(this)">.</td>
+            <td id="modules" class="col-3" onclick="element(this)">%</td>
+            <td
+              class="col-3"
+              id="eq"
+              ondblclick="backResult()"
+              onclick="solve()"
+            >
+              =
+            </td>
           </tr>
         </table>
       </div>

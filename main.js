@@ -2,13 +2,17 @@ let input = document.querySelector(".input");
 let result = document.getElementById("result");
 let temp = "";
 function element(e) {
-  input.value += e.textContent;
   if (e.textContent === "÷") {
+    input.value += e.textContent;
     temp += "/";
-  } else if(e.textContent === "x") {
+  } else if (e.textContent === "x") {
+    input.value += e.textContent;
     temp += "*";
-  } 
-  else {
+  } else if (e.textContent === "pow") {
+    input.value += "^";
+    temp += "**";
+  } else {
+    input.value += e.textContent;
     temp += e.textContent;
   }
 }

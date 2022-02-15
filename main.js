@@ -1,18 +1,28 @@
 let input = document.querySelector(".input");
 let result = document.getElementById("result");
+let temp = "";
 function element(e) {
-  input.value += e.innerHTML;
+  input.value += e.textContent;
+  if (e.textContent === "÷") {
+    temp += "/";
+  } else if(e.textContent === "x") {
+    temp += "*";
+  } 
+  else {
+    temp += e.textContent;
+  }
 }
 
 function solve() {
   if (input.value.trim() != "") {
     try {
-      result.value = eval(input.value);
+      result.value = eval(temp);
     } catch {
       result.value = "Error!";
     }
+    input.value = "";
+    temp = "";
   }
-  input.value = "";
 }
 
 function clr() {
@@ -21,12 +31,7 @@ function clr() {
 }
 
 function del() {
-  let x = input.value[length - 1];
-  if (x === " ") {
-    input.value = input.value.slice(0, -2);
-  } else {
-    input.value = input.value.slice(0, -1);
-  }
+  input.value = input.value.slice(0, -1);
 }
 
 function backResult() {

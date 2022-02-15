@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 body {
   background-color: #02101b;
@@ -18,7 +23,7 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #006898;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -59,15 +64,30 @@ input:focus {
 table {
   max-height: 70vh;
 }
-td {
-  min-height: 10px;
-  font-size: 60px;
+.col-3 {
+  font-size: 300%;
   cursor: pointer;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+}
+#power,
+#modules,
+#division,
+#power,
+#summtion,
+#multiple,
+#substract,
+#eq {
+  color: orange;
+}
+#power:hover,
+#modules:hover,
+#division:hover,
+#power:hover,
+#summtion:hover,
+#multiple:hover,
+#substract:hover,
+#eq:hover {
+  background-color: rgb(209, 144, 23);
+  color: #fff;
 }
 td:hover {
   background-color: #444;
@@ -75,25 +95,18 @@ td:hover {
 .x:hover {
   background-color: crimson;
 }
-.del {
+#del {
   color: crimson;
 }
-.del:hover {
+#del:hover {
   background-color: crimson;
   color: #fff;
 }
-.ac {
+#ac {
   color: rgb(17, 156, 63);
 }
-.ac:hover {
+#ac:hover {
   background-color: rgb(17, 156, 63);
-  color: #fff;
-}
-.eq {
-  color: #006898;
-}
-.eq:hover {
-  background-color: #006898;
   color: #fff;
 }
 
@@ -103,8 +116,5 @@ td:hover {
   }
   input {
     font-size: 30px;
-  }
-  td {
-    font-size: 45px;
   }
 }
